@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func toLoginController(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "Login", sender: self)
+    }
+    
 }
 
