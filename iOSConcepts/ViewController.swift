@@ -16,7 +16,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func toLoginController(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "Login", sender: self)
+        let sb = UIStoryboard.init(name: "Login", bundle: nil)
+        let vc = sb.instantiateInitialViewController()!;
+        self.navigationController?.pushViewController(vc, animated: false)
     }
     
 }

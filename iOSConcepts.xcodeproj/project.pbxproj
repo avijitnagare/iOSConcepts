@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0409A4D12212DDCD00F5AEC2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409A4D02212DDCD00F5AEC2 /* LoginViewController.swift */; };
 		0409A4D52212E3D800F5AEC2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0409A4D32212E3D800F5AEC2 /* Login.storyboard */; };
+		0409A4DA2213151100F5AEC2 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409A4D92213151100F5AEC2 /* MasterViewController.swift */; };
+		0409A4DC2213156500F5AEC2 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409A4DB2213156500F5AEC2 /* SummaryViewController.swift */; };
+		0409A4DE2213157B00F5AEC2 /* SessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409A4DD2213157B00F5AEC2 /* SessionsViewController.swift */; };
+		041659B222365AFB0055A180 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041659B122365AFB0055A180 /* WKWebViewController.swift */; };
 		0462971D2212D9090092323D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462971C2212D9090092323D /* AppDelegate.swift */; };
 		0462971F2212D9090092323D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462971E2212D9090092323D /* ViewController.swift */; };
 		046297222212D9090092323D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046297202212D9090092323D /* Main.storyboard */; };
@@ -39,6 +43,10 @@
 /* Begin PBXFileReference section */
 		0409A4D02212DDCD00F5AEC2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0409A4D42212E3D800F5AEC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = iOSConcepts/Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		0409A4D92213151100F5AEC2 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		0409A4DB2213156500F5AEC2 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		0409A4DD2213157B00F5AEC2 /* SessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsViewController.swift; sourceTree = "<group>"; };
+		041659B122365AFB0055A180 /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
 		046297192212D9090092323D /* iOSConcepts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSConcepts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0462971C2212D9090092323D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0462971E2212D9090092323D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +98,24 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		0409A4DF2213334200F5AEC2 /* Reusable Child */ = {
+			isa = PBXGroup;
+			children = (
+				0409A4D92213151100F5AEC2 /* MasterViewController.swift */,
+				0409A4DB2213156500F5AEC2 /* SummaryViewController.swift */,
+				0409A4DD2213157B00F5AEC2 /* SessionsViewController.swift */,
+			);
+			path = "Reusable Child";
+			sourceTree = "<group>";
+		};
+		041659B322365B010055A180 /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				041659B122365AFB0055A180 /* WKWebViewController.swift */,
+			);
+			path = WKWebView;
+			sourceTree = "<group>";
+		};
 		046297102212D9090092323D = {
 			isa = PBXGroup;
 			children = (
@@ -116,11 +142,13 @@
 				0462971C2212D9090092323D /* AppDelegate.swift */,
 				0462971E2212D9090092323D /* ViewController.swift */,
 				046297202212D9090092323D /* Main.storyboard */,
-				0409A4D22212DDEB00F5AEC2 /* Login */,
 				046297262212D9130092323D /* Assets.xcassets */,
 				046297282212D9130092323D /* LaunchScreen.storyboard */,
 				0462972B2212D9130092323D /* Info.plist */,
 				046297232212D9090092323D /* iOSConcepts.xcdatamodeld */,
+				0409A4DF2213334200F5AEC2 /* Reusable Child */,
+				0409A4D22212DDEB00F5AEC2 /* Login */,
+				041659B322365B010055A180 /* WKWebView */,
 			);
 			path = iOSConcepts;
 			sourceTree = "<group>";
@@ -275,10 +303,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0409A4DA2213151100F5AEC2 /* MasterViewController.swift in Sources */,
 				0409A4D12212DDCD00F5AEC2 /* LoginViewController.swift in Sources */,
 				046297252212D9090092323D /* iOSConcepts.xcdatamodeld in Sources */,
+				041659B222365AFB0055A180 /* WKWebViewController.swift in Sources */,
+				0409A4DE2213157B00F5AEC2 /* SessionsViewController.swift in Sources */,
 				0462971F2212D9090092323D /* ViewController.swift in Sources */,
 				0462971D2212D9090092323D /* AppDelegate.swift in Sources */,
+				0409A4DC2213156500F5AEC2 /* SummaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
