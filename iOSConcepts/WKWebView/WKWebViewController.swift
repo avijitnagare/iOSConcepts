@@ -11,7 +11,7 @@ import WebKit
 
 class WKWebViewController: UIViewController,WKNavigationDelegate,WKUIDelegate {
     
-    @IBOutlet weak var webView: WKWebView!
+    @IBOutlet  var webView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,6 +23,20 @@ class WKWebViewController: UIViewController,WKNavigationDelegate,WKUIDelegate {
         
         self.webView.uiDelegate = self
         self.webView.load(URLRequest(url: url!))
+        
+//        let source = """
+//    document.body.style.background = "#777";
+//"""
+//        let userScript = WKUserScript(source: source,
+//                                      injectionTime: .atDocumentEnd,
+//                                      forMainFrameOnly: true)
+//        let userContentController = WKUserContentController()
+//        userContentController.addUserScript(userScript)
+//        let configuration = WKWebViewConfiguration()
+//        configuration.userContentController = userContentController
+//        self.webView = WKWebView(frame: self.view.bounds,
+//                                 configuration: configuration)
+        
         
         //        sleep(30)
         
@@ -51,6 +65,14 @@ class WKWebViewController: UIViewController,WKNavigationDelegate,WKUIDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         
     }
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        print("Start Loading")
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+      print("End Loading")
+    }
+    
     //uiDelegate
     func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
         let ac = UIAlertController(title: "Hey, listen!", message: message, preferredStyle: .alert)

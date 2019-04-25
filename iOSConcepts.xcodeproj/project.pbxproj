@@ -13,6 +13,9 @@
 		0409A4DC2213156500F5AEC2 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409A4DB2213156500F5AEC2 /* SummaryViewController.swift */; };
 		0409A4DE2213157B00F5AEC2 /* SessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409A4DD2213157B00F5AEC2 /* SessionsViewController.swift */; };
 		041659B222365AFB0055A180 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041659B122365AFB0055A180 /* WKWebViewController.swift */; };
+		0447D74A2270C68F000CB3F1 /* TestCaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447D7492270C68F000CB3F1 /* TestCaseViewController.swift */; };
+		0447D74D2270C7CC000CB3F1 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447D74C2270C7CC000CB3F1 /* Car.swift */; };
+		0447D74F2270D6F6000CB3F1 /* CarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447D74E2270D6F6000CB3F1 /* CarTests.swift */; };
 		0462971D2212D9090092323D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462971C2212D9090092323D /* AppDelegate.swift */; };
 		0462971F2212D9090092323D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462971E2212D9090092323D /* ViewController.swift */; };
 		046297222212D9090092323D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046297202212D9090092323D /* Main.storyboard */; };
@@ -47,6 +50,9 @@
 		0409A4DB2213156500F5AEC2 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		0409A4DD2213157B00F5AEC2 /* SessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsViewController.swift; sourceTree = "<group>"; };
 		041659B122365AFB0055A180 /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
+		0447D7492270C68F000CB3F1 /* TestCaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCaseViewController.swift; sourceTree = "<group>"; };
+		0447D74C2270C7CC000CB3F1 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		0447D74E2270D6F6000CB3F1 /* CarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTests.swift; sourceTree = "<group>"; };
 		046297192212D9090092323D /* iOSConcepts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSConcepts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0462971C2212D9090092323D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0462971E2212D9090092323D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +122,16 @@
 			path = WKWebView;
 			sourceTree = "<group>";
 		};
+		0447D74B2270C7AC000CB3F1 /* Test Case */ = {
+			isa = PBXGroup;
+			children = (
+				0447D7492270C68F000CB3F1 /* TestCaseViewController.swift */,
+				0447D74C2270C7CC000CB3F1 /* Car.swift */,
+				0447D74E2270D6F6000CB3F1 /* CarTests.swift */,
+			);
+			path = "Test Case";
+			sourceTree = "<group>";
+		};
 		046297102212D9090092323D = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +165,7 @@
 				0409A4DF2213334200F5AEC2 /* Reusable Child */,
 				0409A4D22212DDEB00F5AEC2 /* Login */,
 				041659B322365B010055A180 /* WKWebView */,
+				0447D74B2270C7AC000CB3F1 /* Test Case */,
 			);
 			path = iOSConcepts;
 			sourceTree = "<group>";
@@ -305,10 +322,12 @@
 			files = (
 				0409A4DA2213151100F5AEC2 /* MasterViewController.swift in Sources */,
 				0409A4D12212DDCD00F5AEC2 /* LoginViewController.swift in Sources */,
+				0447D74D2270C7CC000CB3F1 /* Car.swift in Sources */,
 				046297252212D9090092323D /* iOSConcepts.xcdatamodeld in Sources */,
 				041659B222365AFB0055A180 /* WKWebViewController.swift in Sources */,
 				0409A4DE2213157B00F5AEC2 /* SessionsViewController.swift in Sources */,
 				0462971F2212D9090092323D /* ViewController.swift in Sources */,
+				0447D74A2270C68F000CB3F1 /* TestCaseViewController.swift in Sources */,
 				0462971D2212D9090092323D /* AppDelegate.swift in Sources */,
 				0409A4DC2213156500F5AEC2 /* SummaryViewController.swift in Sources */,
 			);
@@ -318,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0447D74F2270D6F6000CB3F1 /* CarTests.swift in Sources */,
 				046297352212D9140092323D /* iOSConceptsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
