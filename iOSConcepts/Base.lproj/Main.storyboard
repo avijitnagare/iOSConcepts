@@ -46,14 +46,23 @@
                                     <segue destination="Lrr-jg-ohS" kind="show" id="lAA-sw-6bb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBh-p5-nAq">
+                                <rect key="frame" x="16" y="252" width="46" height="30"/>
+                                <state key="normal" title="MVVM"/>
+                                <connections>
+                                    <segue destination="PlQ-6x-g8W" kind="show" id="zpM-nk-CKk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uF9-7p-4ys" secondAttribute="trailing" symbolic="YES" id="7wJ-e7-JUR"/>
                             <constraint firstItem="uF9-7p-4ys" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="DIu-bT-upC"/>
+                            <constraint firstItem="aBh-p5-nAq" firstAttribute="top" secondItem="bpV-yY-XlK" secondAttribute="bottom" constant="8" id="Fg0-os-YRF"/>
                             <constraint firstItem="9Vs-YP-v19" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="MyK-T5-LvP"/>
                             <constraint firstItem="uF9-7p-4ys" firstAttribute="top" secondItem="qbF-Ik-LpV" secondAttribute="bottom" constant="21" id="UaN-eH-hcF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qbF-Ik-LpV" secondAttribute="trailing" symbolic="YES" id="Ufi-ei-wDm"/>
+                            <constraint firstItem="aBh-p5-nAq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XUi-3h-Khh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bpV-yY-XlK" secondAttribute="trailing" symbolic="YES" id="a4e-6t-ca3"/>
                             <constraint firstItem="9Vs-YP-v19" firstAttribute="top" secondItem="uF9-7p-4ys" secondAttribute="bottom" constant="8" id="dbo-RR-XUj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9Vs-YP-v19" secondAttribute="trailing" symbolic="YES" id="ema-Qb-Gvu"/>
@@ -203,6 +212,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i2X-i6-Wbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1564" y="-606"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nXW-9d-k6l">
+            <objects>
+                <viewController id="PlQ-6x-g8W" customClass="MVVMViewController" customModule="iOSConcepts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MMi-E1-dak">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="42T-Fk-TEL">
+                                <rect key="frame" x="0.0" y="142" width="375" height="525"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="114" id="JpD-u3-6BB">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="114"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JpD-u3-6BB" id="fuV-iK-lHh">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="113.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="PlQ-6x-g8W" id="LIV-Kf-dK0"/>
+                                    <outlet property="delegate" destination="PlQ-6x-g8W" id="Qlm-OB-mc7"/>
+                                </connections>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4MF-4r-j3b">
+                                <rect key="frame" x="127" y="77" width="121" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="toggleDataSegmentControl:" destination="PlQ-6x-g8W" eventType="valueChanged" id="BGK-rw-5ZW"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93716257810592651" green="0.93731957674026489" blue="0.93714183568954468" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4MF-4r-j3b" firstAttribute="top" secondItem="Oy9-W1-WQ3" secondAttribute="top" constant="13" id="Qsi-j3-y4t"/>
+                            <constraint firstItem="Oy9-W1-WQ3" firstAttribute="trailing" secondItem="42T-Fk-TEL" secondAttribute="trailing" id="hcJ-yr-rap"/>
+                            <constraint firstItem="Oy9-W1-WQ3" firstAttribute="bottom" secondItem="42T-Fk-TEL" secondAttribute="bottom" id="heb-b1-JNb"/>
+                            <constraint firstItem="42T-Fk-TEL" firstAttribute="leading" secondItem="Oy9-W1-WQ3" secondAttribute="leading" id="nQn-xB-I20"/>
+                            <constraint firstItem="4MF-4r-j3b" firstAttribute="centerX" secondItem="Oy9-W1-WQ3" secondAttribute="centerX" id="nXJ-rU-fZZ"/>
+                            <constraint firstItem="42T-Fk-TEL" firstAttribute="top" secondItem="4MF-4r-j3b" secondAttribute="bottom" constant="37" id="qJd-Gl-Emb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Oy9-W1-WQ3"/>
+                    </view>
+                    <connections>
+                        <outlet property="myTableView" destination="42T-Fk-TEL" id="YGg-Vw-Ul6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AJD-ml-l8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1989.5999999999999" y="-340.47976011994007"/>
         </scene>
     </scenes>
 </document>
