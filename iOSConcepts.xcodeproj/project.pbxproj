@@ -319,10 +319,12 @@
 					};
 					0462972F2212D9140092323D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = 046297182212D9090092323D;
 					};
 					0462973A2212D9140092323D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = 046297182212D9090092323D;
 					};
 				};
@@ -595,7 +597,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.weatherford..iOSConcepts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -614,7 +616,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.weatherford..iOSConcepts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -633,7 +635,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.weatherford..iOSConceptsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSConcepts.app/iOSConcepts";
 			};
@@ -653,7 +655,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.weatherford..iOSConceptsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSConcepts.app/iOSConcepts";
 			};
@@ -672,7 +674,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.weatherford..iOSConceptsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = iOSConcepts;
 			};
@@ -691,7 +693,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.weatherford..iOSConceptsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = iOSConcepts;
 			};
