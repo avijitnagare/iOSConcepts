@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BlogsVC" customModule="iOSConcepts" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonArticlesList" destination="jG9-nu-ESl" id="cto-tw-AWf"/>
+                <outlet property="buttonMyArticles" destination="u3Z-xF-dfg" id="wJE-H3-Zx3"/>
+                <outlet property="contentView" destination="0KU-gA-ByB" id="IYq-ru-Nu0"/>
+                <outlet property="grayView" destination="etj-bK-If6" id="NTa-EL-ugf"/>
+                <outlet property="lineView" destination="QGC-2q-oy8" id="Bp3-NQ-auW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="etj-bK-If6" userLabel="grayView">
+                    <rect key="frame" x="20" y="80" width="374" height="2"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="2Ky-me-h24"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGC-2q-oy8" userLabel="lineView">
+                    <rect key="frame" x="20" y="80" width="187" height="2"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jG9-nu-ESl">
+                    <rect key="frame" x="20" y="44" width="198" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="ALL POST"/>
+                    <connections>
+                        <action selector="updateView:" destination="-1" eventType="touchUpInside" id="Dbv-Aa-zvo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3Z-xF-dfg">
+                    <rect key="frame" x="218" y="44" width="176" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="MY POST"/>
+                    <connections>
+                        <action selector="updateView:" destination="-1" eventType="touchUpInside" id="yGX-1A-o1J"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0KU-gA-ByB" userLabel="blogContentView">
+                    <rect key="frame" x="0.0" y="86" width="414" height="810"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="u3Z-xF-dfg" firstAttribute="leading" secondItem="jG9-nu-ESl" secondAttribute="trailing" id="5Fo-0h-bn3"/>
+                <constraint firstItem="jG9-nu-ESl" firstAttribute="width" secondItem="u3Z-xF-dfg" secondAttribute="width" multiplier="1.12222" id="7R7-cM-Nj3"/>
+                <constraint firstItem="QGC-2q-oy8" firstAttribute="height" secondItem="etj-bK-If6" secondAttribute="height" id="8Us-DP-Cfu"/>
+                <constraint firstItem="QGC-2q-oy8" firstAttribute="width" secondItem="etj-bK-If6" secondAttribute="width" multiplier="0.5" id="ByE-9i-WKN"/>
+                <constraint firstItem="QGC-2q-oy8" firstAttribute="top" secondItem="etj-bK-If6" secondAttribute="top" id="CtX-vq-NW7"/>
+                <constraint firstItem="jG9-nu-ESl" firstAttribute="top" secondItem="u3Z-xF-dfg" secondAttribute="top" id="EmS-oQ-fcp"/>
+                <constraint firstItem="0KU-gA-ByB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HXi-rX-HFm"/>
+                <constraint firstItem="u3Z-xF-dfg" firstAttribute="trailing" secondItem="etj-bK-If6" secondAttribute="trailing" id="JMs-EJ-eOq"/>
+                <constraint firstItem="0KU-gA-ByB" firstAttribute="top" secondItem="etj-bK-If6" secondAttribute="bottom" constant="4" id="OvN-J8-zaB"/>
+                <constraint firstItem="etj-bK-If6" firstAttribute="top" secondItem="jG9-nu-ESl" secondAttribute="bottom" id="S32-xd-XDY"/>
+                <constraint firstItem="QGC-2q-oy8" firstAttribute="leading" secondItem="etj-bK-If6" secondAttribute="leading" id="U2y-iD-0rj"/>
+                <constraint firstItem="jG9-nu-ESl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="UDZ-U9-GXL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0KU-gA-ByB" secondAttribute="trailing" id="W9D-jU-976"/>
+                <constraint firstAttribute="bottom" secondItem="0KU-gA-ByB" secondAttribute="bottom" id="YW8-WG-fdF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="u3Z-xF-dfg" secondAttribute="trailing" constant="20" id="YrL-x6-78J"/>
+                <constraint firstItem="jG9-nu-ESl" firstAttribute="leading" secondItem="etj-bK-If6" secondAttribute="leading" id="n6c-QW-XHR"/>
+                <constraint firstItem="jG9-nu-ESl" firstAttribute="height" secondItem="u3Z-xF-dfg" secondAttribute="height" id="qTc-HI-VV0"/>
+                <constraint firstItem="jG9-nu-ESl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="uxu-aV-YVf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="83.705357142857139"/>
+        </view>
+    </objects>
+</document>

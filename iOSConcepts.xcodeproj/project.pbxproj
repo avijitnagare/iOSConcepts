@@ -36,7 +36,11 @@
 		04CC4AA0227C53A100C8A93D /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CC4A9C227C53A100C8A93D /* apple.png */; };
 		04CC4AA1227C53A100C8A93D /* python.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CC4A9D227C53A100C8A93D /* python.png */; };
 		04CC4AA4227C677000C8A93D /* ArticleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC4AA3227C677000C8A93D /* ArticleData.swift */; };
+		847FDB152418DE9000D8DCCE /* FullImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847FDB132418DE9000D8DCCE /* FullImageVC.swift */; };
+		847FDB162418DE9000D8DCCE /* FullImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847FDB142418DE9000D8DCCE /* FullImageVC.xib */; };
 		84A5A24C23F3FC0000224AD4 /* ScrollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A5A24B23F3FC0000224AD4 /* ScrollVC.swift */; };
+		84AE4CB5241777A000FC5409 /* BlogsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE4CB3241777A000FC5409 /* BlogsVC.swift */; };
+		84AE4CB6241777A000FC5409 /* BlogsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AE4CB4241777A000FC5409 /* BlogsVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,7 +96,11 @@
 		04CC4A9C227C53A100C8A93D /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
 		04CC4A9D227C53A100C8A93D /* python.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = python.png; sourceTree = "<group>"; };
 		04CC4AA3227C677000C8A93D /* ArticleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleData.swift; sourceTree = "<group>"; };
+		847FDB132418DE9000D8DCCE /* FullImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullImageVC.swift; sourceTree = "<group>"; };
+		847FDB142418DE9000D8DCCE /* FullImageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FullImageVC.xib; sourceTree = "<group>"; };
 		84A5A24B23F3FC0000224AD4 /* ScrollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollVC.swift; sourceTree = "<group>"; };
+		84AE4CB3241777A000FC5409 /* BlogsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogsVC.swift; sourceTree = "<group>"; };
+		84AE4CB4241777A000FC5409 /* BlogsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlogsVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,8 @@
 		0409A4DF2213334200F5AEC2 /* Reusable Child */ = {
 			isa = PBXGroup;
 			children = (
+				84AE4CB3241777A000FC5409 /* BlogsVC.swift */,
+				84AE4CB4241777A000FC5409 /* BlogsVC.xib */,
 				0409A4D92213151100F5AEC2 /* MasterViewController.swift */,
 				0409A4DB2213156500F5AEC2 /* SummaryViewController.swift */,
 				0409A4DD2213157B00F5AEC2 /* SessionsViewController.swift */,
@@ -204,6 +214,7 @@
 				0447D74B2270C7AC000CB3F1 /* Test Case */,
 				04CC4A93227C4C7500C8A93D /* MVVM */,
 				041EEEFE227CB2230078F2A0 /* Closure */,
+				847FDB172418DEA900D8DCCE /* FullScreenImage */,
 				84A5A24D23F3FC0600224AD4 /* ScrollView */,
 			);
 			path = iOSConcepts;
@@ -249,6 +260,15 @@
 				04CC4A9B227C53A100C8A93D /* swift.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		847FDB172418DEA900D8DCCE /* FullScreenImage */ = {
+			isa = PBXGroup;
+			children = (
+				847FDB132418DE9000D8DCCE /* FullImageVC.swift */,
+				847FDB142418DE9000D8DCCE /* FullImageVC.xib */,
+			);
+			path = FullScreenImage;
 			sourceTree = "<group>";
 		};
 		84A5A24D23F3FC0600224AD4 /* ScrollView */ = {
@@ -367,8 +387,10 @@
 			files = (
 				04CC4A9E227C53A100C8A93D /* javascript.png in Resources */,
 				04CC4A9F227C53A100C8A93D /* swift.png in Resources */,
+				84AE4CB6241777A000FC5409 /* BlogsVC.xib in Resources */,
 				0409A4D52212E3D800F5AEC2 /* Login.storyboard in Resources */,
 				04CC4AA0227C53A100C8A93D /* apple.png in Resources */,
+				847FDB162418DE9000D8DCCE /* FullImageVC.xib in Resources */,
 				0462972A2212D9130092323D /* LaunchScreen.storyboard in Resources */,
 				046297272212D9130092323D /* Assets.xcassets in Resources */,
 				046297222212D9090092323D /* Main.storyboard in Resources */,
@@ -403,8 +425,10 @@
 				04CC4A97227C4DD500C8A93D /* ArticleViewModel.swift in Sources */,
 				0447D74D2270C7CC000CB3F1 /* Car.swift in Sources */,
 				046297252212D9090092323D /* iOSConcepts.xcdatamodeld in Sources */,
+				847FDB152418DE9000D8DCCE /* FullImageVC.swift in Sources */,
 				041EEF00227CB3340078F2A0 /* ViewModel.swift in Sources */,
 				041659B222365AFB0055A180 /* WKWebViewController.swift in Sources */,
+				84AE4CB5241777A000FC5409 /* BlogsVC.swift in Sources */,
 				041EEF02227CB4E70078F2A0 /* Client.swift in Sources */,
 				0409A4DE2213157B00F5AEC2 /* SessionsViewController.swift in Sources */,
 				04CC4AA4227C677000C8A93D /* ArticleData.swift in Sources */,

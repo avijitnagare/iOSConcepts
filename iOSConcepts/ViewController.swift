@@ -20,6 +20,15 @@ class ViewController: UIViewController {
         let vc = sb.instantiateInitialViewController()!;
         self.navigationController?.pushViewController(vc, animated: false)
     }
-    
+    @IBAction func toPageMenu(_ sender: UIButton) {
+       let vc = BlogsVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @IBAction func fullScreenImage(_ sender: UIButton) {
+            let iVC = FullImageVC()
+            iVC.imageToShow = UIImage(named: "swift")
+            self.navigationController?.pushViewController(iVC, animated: true)
+    }
+
 }
 

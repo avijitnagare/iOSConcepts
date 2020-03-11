@@ -109,6 +109,20 @@
                                     <segue destination="pHC-ok-jiV" kind="show" id="I3W-Dg-s7O"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3r-Bh-05Y">
+                                <rect key="frame" x="14" y="346" width="73" height="30"/>
+                                <state key="normal" title="PageMenu"/>
+                                <connections>
+                                    <action selector="toPageMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t0I-8A-P2F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySR-ub-ZTj">
+                                <rect key="frame" x="127" y="67" width="122" height="30"/>
+                                <state key="normal" title="Full Screen Image"/>
+                                <connections>
+                                    <action selector="fullScreenImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3YV-6e-AP0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -117,12 +131,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uF9-7p-4ys" secondAttribute="trailing" symbolic="YES" id="7wJ-e7-JUR"/>
                             <constraint firstItem="uF9-7p-4ys" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="DIu-bT-upC"/>
                             <constraint firstItem="aBh-p5-nAq" firstAttribute="top" secondItem="bpV-yY-XlK" secondAttribute="bottom" constant="8" id="Fg0-os-YRF"/>
+                            <constraint firstItem="l2K-FE-GyK" firstAttribute="leading" secondItem="r3r-Bh-05Y" secondAttribute="leading" id="Lg9-Jr-C5R"/>
                             <constraint firstItem="U0n-Hh-YMp" firstAttribute="leading" secondItem="l2K-FE-GyK" secondAttribute="leading" id="Lqt-YL-nqg"/>
                             <constraint firstItem="9Vs-YP-v19" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="MyK-T5-LvP"/>
                             <constraint firstItem="uF9-7p-4ys" firstAttribute="top" secondItem="qbF-Ik-LpV" secondAttribute="bottom" constant="21" id="UaN-eH-hcF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qbF-Ik-LpV" secondAttribute="trailing" symbolic="YES" id="Ufi-ei-wDm"/>
                             <constraint firstItem="aBh-p5-nAq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XUi-3h-Khh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bpV-yY-XlK" secondAttribute="trailing" symbolic="YES" id="a4e-6t-ca3"/>
+                            <constraint firstItem="r3r-Bh-05Y" firstAttribute="top" secondItem="l2K-FE-GyK" secondAttribute="bottom" constant="8" id="ah0-nP-6dO"/>
                             <constraint firstItem="9Vs-YP-v19" firstAttribute="top" secondItem="uF9-7p-4ys" secondAttribute="bottom" constant="8" id="dbo-RR-XUj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9Vs-YP-v19" secondAttribute="trailing" symbolic="YES" id="ema-Qb-Gvu"/>
                             <constraint firstItem="U0n-Hh-YMp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="fu3-dH-f2l"/>
@@ -130,6 +146,8 @@
                             <constraint firstItem="bpV-yY-XlK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jaz-oA-Vmn"/>
                             <constraint firstItem="qbF-Ik-LpV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="kDu-yA-EmR"/>
                             <constraint firstItem="qbF-Ik-LpV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mwS-h7-ZuC"/>
+                            <constraint firstItem="ySR-ub-ZTj" firstAttribute="centerY" secondItem="qbF-Ik-LpV" secondAttribute="centerY" id="wKS-en-iwZ"/>
+                            <constraint firstItem="ySR-ub-ZTj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zRA-4J-por"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -151,7 +169,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="7dY-y9-HRP">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="asD-KD-GPa">
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="asD-KD-GPa">
                             <rect key="frame" x="122" y="6" width="131" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
