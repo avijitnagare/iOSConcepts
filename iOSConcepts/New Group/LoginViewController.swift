@@ -9,17 +9,20 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
+    var loginModel = LoginModel()
 
     @IBOutlet weak var txt_Password: UITextField!
     @IBOutlet weak var txt_EmailField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        loginModel.delegate = loginModel
         // Do any additional setup after loading the view.
     }
     
     @IBAction func loginButtonAction(_ sender: UIButton) {
-        
+        loginModel.delegate?.viewToModelPassing(email: self.txt_EmailField.text!, password: self.txt_Password.text!)
     }
     
     /*
