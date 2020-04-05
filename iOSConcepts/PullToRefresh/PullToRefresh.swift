@@ -54,7 +54,7 @@ class PullToRefresh: UIViewController, UITableViewDataSource, UITableViewDelegat
          ApiManager.instance.getDataFromApi(api:.home, httpRequest:.post, params: param) { (data, response, error) in
             
                   do {
-                    let str = String(decoding: data!, as: UTF8.self)
+                  //  let str = String(decoding: data!, as: UTF8.self)
 
                           DispatchQueue.main.async {
                               //reload data
@@ -73,7 +73,7 @@ class PullToRefresh: UIViewController, UITableViewDataSource, UITableViewDelegat
     
     func getNextPage(){
         
-        if self.blogModel.count  < self.blogApiModel?.page?.totalCount ?? 0 {
+        if self.blogApiModel?.results?.count ?? 0  < self.blogApiModel?.page?.totalCount ?? 0 {
             let nextPage = (self.blogApiModel?.page?.number ?? 0) + 1
             getNextBlogs(pageNumber: nextPage)
         }
