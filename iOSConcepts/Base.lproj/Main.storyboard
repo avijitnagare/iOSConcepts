@@ -130,6 +130,13 @@
                                     <segue destination="EaF-Sb-wSv" kind="show" id="M5B-t0-1cM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24v-yM-T0x">
+                                <rect key="frame" x="110" y="156" width="155" height="30"/>
+                                <state key="normal" title="Select Multiple Images"/>
+                                <connections>
+                                    <action selector="selectMultipleImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BOc-U6-QxA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -137,6 +144,7 @@
                             <constraint firstItem="l2K-FE-GyK" firstAttribute="top" secondItem="U0n-Hh-YMp" secondAttribute="bottom" constant="8" id="5VX-Ul-qPr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uF9-7p-4ys" secondAttribute="trailing" symbolic="YES" id="7wJ-e7-JUR"/>
                             <constraint firstItem="uF9-7p-4ys" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="DIu-bT-upC"/>
+                            <constraint firstItem="24v-yM-T0x" firstAttribute="centerX" secondItem="Jot-gj-SHX" secondAttribute="centerX" id="Ewd-co-Ufx"/>
                             <constraint firstItem="aBh-p5-nAq" firstAttribute="top" secondItem="bpV-yY-XlK" secondAttribute="bottom" constant="8" id="Fg0-os-YRF"/>
                             <constraint firstItem="l2K-FE-GyK" firstAttribute="leading" secondItem="r3r-Bh-05Y" secondAttribute="leading" id="Lg9-Jr-C5R"/>
                             <constraint firstItem="U0n-Hh-YMp" firstAttribute="leading" secondItem="l2K-FE-GyK" secondAttribute="leading" id="Lqt-YL-nqg"/>
@@ -155,6 +163,7 @@
                             <constraint firstItem="qbF-Ik-LpV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="kDu-yA-EmR"/>
                             <constraint firstItem="qbF-Ik-LpV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mwS-h7-ZuC"/>
                             <constraint firstItem="ySR-ub-ZTj" firstAttribute="centerY" secondItem="qbF-Ik-LpV" secondAttribute="centerY" id="wKS-en-iwZ"/>
+                            <constraint firstItem="24v-yM-T0x" firstAttribute="top" secondItem="Jot-gj-SHX" secondAttribute="bottom" constant="8" id="wgl-KD-ghg"/>
                             <constraint firstItem="uF9-7p-4ys" firstAttribute="centerY" secondItem="Jot-gj-SHX" secondAttribute="centerY" id="yh4-dT-Acy"/>
                             <constraint firstItem="ySR-ub-ZTj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zRA-4J-por"/>
                         </constraints>

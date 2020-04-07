@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,ANMultiSelectionViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,5 +30,18 @@ class ViewController: UIViewController {
             self.navigationController?.pushViewController(iVC, animated: true)
     }
 
+    @IBAction func selectMultipleImage(_ sender: UIButton) {
+             let sb = UIStoryboard.init(name: "MultiSelection", bundle: nil)
+             let vc = sb.instantiateInitialViewController() as! ANMultiSelectionViewController;
+             vc.imageDelegate = self ;
+             vc.currentImageAddedCount = 0;
+             self.navigationController?.pushViewController(vc, animated: false)
+       }
+    func passImagesBackToController(array: [UIImage]) {
+        //use images
+        let image = array[0]
+        print(image)
+    }
+    
 }
 
