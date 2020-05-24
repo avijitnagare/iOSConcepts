@@ -49,6 +49,9 @@
 		84A5A24C23F3FC0000224AD4 /* ScrollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A5A24B23F3FC0000224AD4 /* ScrollVC.swift */; };
 		84AE4CB5241777A000FC5409 /* BlogsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE4CB3241777A000FC5409 /* BlogsVC.swift */; };
 		84AE4CB6241777A000FC5409 /* BlogsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AE4CB4241777A000FC5409 /* BlogsVC.xib */; };
+		84DEB4FD247A8C180021FDA2 /* LoginMVVMVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEB4FC247A8C180021FDA2 /* LoginMVVMVc.swift */; };
+		84DEB500247A909C0021FDA2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEB4FF247A909C0021FDA2 /* User.swift */; };
+		84DEB502247A912F0021FDA2 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEB501247A912F0021FDA2 /* LoginVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +120,9 @@
 		84A5A24B23F3FC0000224AD4 /* ScrollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollVC.swift; sourceTree = "<group>"; };
 		84AE4CB3241777A000FC5409 /* BlogsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogsVC.swift; sourceTree = "<group>"; };
 		84AE4CB4241777A000FC5409 /* BlogsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlogsVC.xib; sourceTree = "<group>"; };
+		84DEB4FC247A8C180021FDA2 /* LoginMVVMVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMVVMVc.swift; sourceTree = "<group>"; };
+		84DEB4FF247A909C0021FDA2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		84DEB501247A912F0021FDA2 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +242,7 @@
 				84A5A24D23F3FC0600224AD4 /* ScrollView */,
 				843DAA0524290576008FAE13 /* PullToRefresh */,
 				8435BC522439D61300A87B71 /* Select Multiple Images */,
+				84DEB4FE247A8C260021FDA2 /* LoginMVVM */,
 			);
 			path = iOSConcepts;
 			sourceTree = "<group>";
@@ -317,6 +324,16 @@
 				84A5A24B23F3FC0000224AD4 /* ScrollVC.swift */,
 			);
 			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		84DEB4FE247A8C260021FDA2 /* LoginMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				84DEB4FC247A8C180021FDA2 /* LoginMVVMVc.swift */,
+				84DEB4FF247A909C0021FDA2 /* User.swift */,
+				84DEB501247A912F0021FDA2 /* LoginVM.swift */,
+			);
+			path = LoginMVVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,10 +497,13 @@
 				0409A4DE2213157B00F5AEC2 /* SessionsViewController.swift in Sources */,
 				04CC4AA4227C677000C8A93D /* ArticleData.swift in Sources */,
 				04CC4A92227C4C6E00C8A93D /* MVVMViewController.swift in Sources */,
+				84DEB502247A912F0021FDA2 /* LoginVM.swift in Sources */,
 				843DAA0724290855008FAE13 /* ApiManager.swift in Sources */,
 				04CC4A99227C529100C8A93D /* ArticleProtocol.swift in Sources */,
+				84DEB500247A909C0021FDA2 /* User.swift in Sources */,
 				0462971F2212D9090092323D /* ViewController.swift in Sources */,
 				04CC4A95227C4C9100C8A93D /* Article.swift in Sources */,
+				84DEB4FD247A8C180021FDA2 /* LoginMVVMVc.swift in Sources */,
 				0447D74A2270C68F000CB3F1 /* TestCaseViewController.swift in Sources */,
 				84A5A24C23F3FC0000224AD4 /* ScrollVC.swift in Sources */,
 				0462971D2212D9090092323D /* AppDelegate.swift in Sources */,
