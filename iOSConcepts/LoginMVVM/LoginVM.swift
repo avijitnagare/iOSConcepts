@@ -20,7 +20,7 @@ class LoginVM: NSObject {
     
     typealias loginCallBack = (_ status: Bool, _ message: String) -> Void
     
-    var loginCallBackObject: loginCallBack?
+    var loginClosure: loginCallBack?
     
     func tryToLoginWith(_ username: String, and password: String) {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+2) {
@@ -29,12 +29,12 @@ class LoginVM: NSObject {
                         self.verifyUserWith(username, and: password)
                        }else{
                            //password empty
-                           self.loginCallBackObject?(false, "Password Should Not Empty")
+                           self.loginClosure?(false, "Password Should Not Empty")
                        }
                        
             }else {
                        //email empty
-                       self.loginCallBackObject?(false, "UserName Should Not Empty")
+                       self.loginClosure?(false, "UserName Should Not Empty")
              }
         }
        
@@ -43,15 +43,15 @@ class LoginVM: NSObject {
     fileprivate func verifyUserWith(_ username: String, and password: String) {
         if username == "test"  && password == "123" {
              user = User(userName:username , email: "\(username)@gmail.com")
-             self.loginCallBackObject?(true, "Login Successful")
+             self.loginClosure?(true, "Login Successful")
         }else{
             //invalid credentials
-            self.loginCallBackObject?(false, "Enter Valid Credentials")
+            self.loginClosure?(false, "Enter Valid Credentials")
         }
     }
     
     func loginCompletionHandler(callback: @escaping loginCallBack) {
-        self.loginCallBackObject = callback
+        self.loginClosure = callback
     }
 
 }
